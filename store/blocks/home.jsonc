@@ -1,0 +1,96 @@
+{
+    "store.home":
+    {
+        "blocks":
+        [
+            "tab-layout"
+        ]
+    },
+    "slider-layout#home": {
+      "children": [
+        "info-card#1", "info-card#2"
+      ],
+
+      "props": {
+        "autoplay": {
+          "timeout": 7000,
+          "stopOnHover": false
+        }
+      }
+    },
+    "info-card#1": {
+      "props": {
+        "height": 500,
+        "imageUrl": "https://via.placeholder.com/1350x500.png",
+        "isFullModeStyle": true,
+        "healine": "Black Friday",
+        "callToActionText": "subscribe",
+        "textPosition": "CENTER"
+      }
+    },
+    "info-card#2": {
+      "props": {
+        "height": 500,
+        "imageUrl": "https://via.placeholder.com/1350x500.png",
+        "isFullModeStyle": true,
+        "healine": "Black Friday",
+        "callToActionText": "subscribe2",
+        "textPosition": "CENTER"
+      }      
+    },
+
+    "tab-layout": {
+      "children": [
+        "tab-list", "tab-content"
+      ]
+    },
+    "tab-list": {
+      "children": [
+        "tab-list.item#1", "tab-list.item#2"
+      ]
+    },
+    "tab-content": {
+      "children": [
+        "tab-content.item#1", "tab-content.item#2"
+      ]
+    },
+    "tab-list.item#1": {
+      "props": {
+        "tabId": "majorAppliances",
+        "label": "Major Appliances",
+        "defaultActiveTab": true
+      }
+    },
+    "tab-list.item#2": {
+      "props": {
+        "tabId": "eletronics",
+        "label": "Eletronics"
+      }
+    },
+    "tab-content.item#1": {
+      "children": ["slider-layout#home", "rich-text#1"],
+      "props": {
+        "tabId": "majorAppliances"
+      }
+    },
+    "tab-content.item#2": {
+      "children": ["slider-layout#home", "rich-text#2"],
+      "props": {
+        "tabId": "eletronics"
+      }
+    },
+    "rich-text#1": {
+      "props": {
+        "text": "Texto para Major Appliances",
+        "textPosition": "CENTER",
+        "font": "t-heading-3"
+      }
+    },
+    "rich-text#2": {
+      "props": {
+        "text": "Texto para Eletronics",
+        "textPosition": "CENTER",
+        "font": "t-heading-3"
+      }
+    }
+}
